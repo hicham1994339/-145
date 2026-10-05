@@ -1,0 +1,827 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://localhost:8159/Index.html
+Subject: =?utf-8?Q?=D9=85=D8=AD=D9=81=D8=B8=D8=A9=20=D8=A7=D9=84=D9=88=D8=B3=D8=A7?=
+ =?utf-8?Q?=D8=B7=D8=A9=20=D8=A7=D9=84=D9=82=D8=B6=D8=A7=D8=A6=D9=8A=D8=A9?=
+ =?utf-8?Q?=20=D8=AD=D9=85=D8=AF=D8=A7=D8=AF=20=D9=87=D8=B4=D8=A7=D9=85?=
+Date: Sun, 27 Sep 2026 15:32:14 GMT
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--MWpolNbo0xEcLIur7ZHL6haLj6344guZaRzoCzRi4A----"
+
+
+------MultipartBoundary--MWpolNbo0xEcLIur7ZHL6haLj6344guZaRzoCzRi4A----
+Content-Type: text/html
+Content-ID: <frame-83E6B1BD8F8BAE7DA58FC948F1A1E29D@mhtml.blink>
+Content-Transfer-Encoding: binary
+Content-Location: http://localhost:8159/Index.html
+
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="cid:css-188b626e-d347-4162-9fe0-6b4c8dd8152b@mhtml.blink" /><link rel="stylesheet" type="text/css" href="cid:css-a2de24f6-0531-4e79-9490-2ce432ee8596@mhtml.blink" /><!-- Injected code, this is not present in original code --><meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
+    
+    
+    <!-- Injected code, this is not present in original code -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#123c35">
+<title>محفظة الوساطة القضائية حمداد هشام</title>
+
+
+</head><c-toggler style="transform: translate(2px, 364px); display: none;"></c-toggler>
+
+<body>
+
+<!-- =========================
+     شاشة الدخول
+========================= -->
+<section id="loginPage" class="login-page">
+
+    <div class="login-card">
+
+        <div class="logo">و</div>
+
+        <h1>محفظة الوساطة القضائية<br>حمداد هشام</h1>
+
+        <div class="subtitle">
+            منصة رقمية لإدارة ملفات الوساطة القضائية
+        </div>
+
+        <div class="role-buttons">
+            <button class="role-btn" id="mediatorRole">
+                ⚖️ الوسيط القضائي
+            </button>
+
+            <button class="role-btn active" id="ministryRole">
+                🏛️ وزارة العدل
+            </button>
+        </div>
+
+        <div id="loginError" class="error">
+            بيانات الدخول غير صحيحة.
+        </div>
+
+        <div class="form-group">
+            <label>اسم المستخدم</label>
+            <input id="username" type="text" placeholder="أدخل اسم المستخدم">
+        </div>
+
+        <div class="form-group">
+            <label>كلمة المرور</label>
+            <input id="password" type="password" placeholder="أدخل كلمة المرور">
+        </div>
+
+        <button class="login-btn">
+            دخول آمن
+        </button>
+
+        <div class="demo-info">
+            <strong>للتجربة فقط:</strong><br>
+            الوسيط: hamdad / 123456<br>
+            الوزارة: justice / 123456
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================
+     التطبيق
+========================= -->
+<section id="app" class="app hidden">
+
+    <header class="topbar">
+
+        <div class="brand">
+            <div class="brand-icon">و</div>
+            <div class="brand-title">
+                محفظة الوساطة القضائية حمداد هشام
+            </div>
+        </div>
+
+        <div class="user-area">
+            <div>
+                <div id="displayUser"></div>
+                <div id="displayRole" class="user-role"></div>
+            </div>
+
+            <button class="logout">
+                خروج
+            </button>
+        </div>
+
+    </header>
+
+
+    <div class="layout">
+
+        <aside class="sidebar">
+
+            <button class="menu-btn active">
+                🏠 الرئيسية
+            </button>
+
+            <button class="menu-btn">
+                📁 الملفات
+            </button>
+
+            <button class="menu-btn">
+                ▣ رمز QR
+            </button>
+
+            <button class="menu-btn">
+                👤 الملف الشخصي
+            </button>
+
+            <button id="ministryMenu" class="menu-btn hidden">
+                🏛️ إدارة الوزارة
+            </button>
+
+        </aside>
+
+
+        <main class="content">
+
+            <!-- الرئيسية -->
+            <div id="dashboardPage" class="page">
+
+                <h2 class="page-title">الرئيسية</h2>
+                <p class="page-description">
+                    مرحبًا بك في محفظة الوساطة القضائية.
+                </p>
+
+                <div class="stats">
+
+                    <div class="stat-card">
+                        <div class="stat-label">إجمالي الملفات</div>
+                        <div class="stat-number">24</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-label">ملفات مفتوحة</div>
+                        <div class="stat-number">12</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-label">ملفات مغلقة</div>
+                        <div class="stat-number">8</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-label">قيد الإجراء</div>
+                        <div class="stat-number">4</div>
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>الوصول السريع</h3>
+
+                    <div class="quick-actions">
+
+                        <div class="action">
+                            <div class="action-icon">📁</div>
+                            <strong>ملفات الوساطة</strong>
+                        </div>
+
+                        <div class="action">
+                            <div class="action-icon">▣</div>
+                            <strong>رمز الدخول QR</strong>
+                        </div>
+
+                        <div class="action">
+                            <div class="action-icon">👤</div>
+                            <strong>بيانات الحساب</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>آخر النشاطات</h3>
+
+                    <div class="table-wrap">
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>التاريخ</th>
+                                    <th>النشاط</th>
+                                    <th>الملف</th>
+                                    <th>الحالة</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>27/09/2026</td>
+                                    <td>تحديث ملف</td>
+                                    <td>MED-2026-001</td>
+                                    <td>
+                                        <span class="status open">مفتوح</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>26/09/2026</td>
+                                    <td>إضافة وثيقة</td>
+                                    <td>MED-2026-002</td>
+                                    <td>
+                                        <span class="status wait">قيد الإجراء</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- الملفات -->
+            <div id="filesPage" class="page hidden">
+
+                <h2 class="page-title">ملفات الوساطة القضائية</h2>
+
+                <p class="page-description">
+                    الملفات المرتبطة بحساب المستخدم الحالي.
+                </p>
+
+                <div class="card">
+
+                    <input class="search-box" id="searchInput" placeholder="🔎 البحث برقم الملف أو اسم الأطراف...">
+
+                    <div class="table-wrap">
+
+                        <table id="filesTable">
+
+                            <thead>
+                                <tr>
+                                    <th>رقم الملف</th>
+                                    <th>الأطراف</th>
+                                    <th>نوع النزاع</th>
+                                    <th>التاريخ</th>
+                                    <th>الحالة</th>
+                                    <th>الإجراء</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>MED-2026-001</td>
+                                    <td>طرف أ / طرف ب</td>
+                                    <td>مدني</td>
+                                    <td>20/09/2026</td>
+                                    <td>
+                                        <span class="status open">
+                                            مفتوح
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <button class="copy-btn">
+                                            عرض
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>MED-2026-002</td>
+                                    <td>طرف ج / طرف د</td>
+                                    <td>تجاري</td>
+                                    <td>18/09/2026</td>
+                                    <td>
+                                        <span class="status wait">
+                                            قيد الإجراء
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <button class="copy-btn">
+                                            عرض
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>MED-2026-003</td>
+                                    <td>طرف هـ / طرف و</td>
+                                    <td>أسري</td>
+                                    <td>10/09/2026</td>
+                                    <td>
+                                        <span class="status closed">
+                                            مغلق
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <button class="copy-btn">
+                                            عرض
+                                        </button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- QR -->
+            <div id="qrPage" class="page hidden">
+
+                <h2 class="page-title">الدخول السريع بواسطة QR</h2>
+
+                <p class="page-description">
+                    يمكن استخدام الرابط الموجود في QR للوصول السريع إلى صفحة النظام.
+                </p>
+
+                <div class="qr-section">
+
+                    <div class="card">
+
+                        <h3>رمز الوصول</h3>
+
+                        <div class="qr-box">
+
+                            <div id="qrcode">
+                                <div class="qr-placeholder"></div>
+                            </div>
+
+                            <p style="font-size:13px;color:#777;line-height:1.8">
+                                هذا النموذج يعرض مكان QR.
+                                في النسخة النهائية يمكن إنشاء QR حقيقي
+                                مرتبط بخادم النظام.
+                            </p>
+
+                            <br>
+
+                            <button class="copy-btn">
+                                نسخ رابط الدخول
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <h3>طريقة الاستخدام</h3>
+
+                        <ol style="line-height:2;padding-right:20px;color:#555">
+
+                            <li>افتح كاميرا الهاتف.</li>
+
+                            <li>امسح رمز QR.</li>
+
+                            <li>ستفتح صفحة النظام.</li>
+
+                            <li>قم بتسجيل الدخول.</li>
+
+                            <li>بعد التحقق تظهر الصلاحيات الخاصة بحسابك.</li>
+
+                        </ol>
+
+                        <br>
+
+                        <div style="
+                            background:#fff7df;
+                            color:#755b10;
+                            padding:12px;
+                            border-radius:10px;
+                            font-size:13px;
+                            line-height:1.8;">
+                            <strong>تنبيه أمني:</strong>
+                            لا ينبغي أن يحتوي QR في النظام الحقيقي
+                            على كلمة المرور أو بيانات سرية.
+                            يجب أن يحتوي على رابط أو رمز وصول آمن
+                            تتم صلاحيته من الخادم.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- الملف الشخصي -->
+            <div id="profilePage" class="page hidden">
+
+                <h2 class="page-title">الملف الشخصي</h2>
+
+                <p class="page-description">
+                    بيانات المستخدم وصلاحياته.
+                </p>
+
+                <div class="card">
+
+                    <div class="detail">
+
+                        <div class="detail-item">
+                            <span>الاسم</span>
+                            <strong id="profileName">
+                                حمداد هشام
+                            </strong>
+                        </div>
+
+                        <div class="detail-item">
+                            <span>نوع الحساب</span>
+                            <strong id="profileRole">
+                                وسيط قضائي
+                            </strong>
+                        </div>
+
+                        <div class="detail-item">
+                            <span>اسم المستخدم</span>
+                            <strong id="profileUsername">
+                                hamdad
+                            </strong>
+                        </div>
+
+                        <div class="detail-item">
+                            <span>حالة الحساب</span>
+                            <strong style="color:#147a45">
+                                نشط
+                            </strong>
+                        </div>
+
+                        <div class="detail-item">
+                            <span>المنصة</span>
+                            <strong>
+                                محفظة الوساطة القضائية
+                            </strong>
+                        </div>
+
+                        <div class="detail-item">
+                            <span>الصلاحية</span>
+                            <strong id="profilePermission">
+                                إدارة الملفات الخاصة
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- إدارة الوزارة -->
+            <div id="administrationPage" class="page hidden">
+
+                <h2 class="page-title">إدارة وزارة العدل</h2>
+
+                <p class="page-description">
+                    لوحة إدارية تجريبية لحساب وزارة العدل.
+                </p>
+
+                <div class="stats">
+
+                    <div class="stat-card">
+                        <div class="stat-label">
+                            عدد الوسطاء
+                        </div>
+                        <div class="stat-number">
+                            128
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-label">
+                            الملفات الكلية
+                        </div>
+                        <div class="stat-number">
+                            842
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-label">
+                            ملفات مفتوحة
+                        </div>
+                        <div class="stat-number">
+                            315
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-label">
+                            التقارير
+                        </div>
+                        <div class="stat-number">
+                            56
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>ملاحظة</h3>
+
+                    <p style="line-height:2;color:#555">
+                        في النسخة الحقيقية، لا تظهر هذه المعلومات
+                        إلا للمستخدم الذي يمتلك صلاحية وزارة العدل،
+                        ويتم التحقق من الصلاحيات على الخادم وليس
+                        بواسطة JavaScript فقط.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</section>
+
+
+<div id="toast" class="toast"></div>
+
+
+
+
+
+
+</body></html>
+------MultipartBoundary--MWpolNbo0xEcLIur7ZHL6haLj6344guZaRzoCzRi4A----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: cid:css-a2de24f6-0531-4e79-9490-2ce432ee8596@mhtml.blink
+
+@charset "utf-8";
+
+* { box-sizing: border-box; margin: 0px; padding: 0px; font-family: Tahoma, Arial, sans-serif; }
+
+body { background: rgb(242, 245, 244); color: rgb(23, 33, 31); min-height: 100vh; }
+
+button, input, select { font-family: inherit; }
+
+.hidden { display: none !important; }
+
+.login-page { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; background: linear-gradient(135deg, rgba(8, 48, 42, 0.96), rgba(18, 80, 69, 0.94)); }
+
+.login-card { width: 100%; max-width: 450px; background: rgb(255, 255, 255); border-radius: 24px; padding: 32px 25px; box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 60px; }
+
+.logo { width: 82px; height: 82px; margin: 0px auto 15px; border-radius: 50%; background: rgb(212, 175, 55); display: flex; align-items: center; justify-content: center; color: rgb(18, 60, 53); font-size: 34px; font-weight: bold; border: 5px solid rgb(244, 230, 176); }
+
+.login-card h1 { text-align: center; color: rgb(18, 60, 53); font-size: 23px; line-height: 1.6; }
+
+.subtitle { text-align: center; color: rgb(119, 119, 119); margin: 7px 0px 25px; font-size: 14px; }
+
+.role-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 18px; }
+
+.role-btn { border: 2px solid rgb(223, 231, 228); background: rgb(255, 255, 255); padding: 12px 8px; border-radius: 12px; cursor: pointer; color: rgb(85, 85, 85); }
+
+.role-btn.active { background: rgb(232, 243, 240); border-color: rgb(23, 100, 85); color: rgb(18, 60, 53); font-weight: bold; }
+
+.form-group { margin-bottom: 15px; }
+
+.form-group label { display: block; margin-bottom: 7px; font-size: 14px; font-weight: bold; }
+
+.form-group input { width: 100%; padding: 14px; border: 1px solid rgb(214, 221, 218); border-radius: 11px; outline: none; font-size: 15px; }
+
+.form-group input:focus { border-color: rgb(23, 100, 85); box-shadow: rgba(23, 100, 85, 0.1) 0px 0px 0px 3px; }
+
+.login-btn { width: 100%; border: 0px; background: rgb(23, 100, 85); color: white; padding: 14px; border-radius: 11px; font-size: 16px; font-weight: bold; cursor: pointer; }
+
+.login-btn:hover { background: rgb(14, 78, 66); }
+
+.error { background: rgb(255, 240, 240); color: rgb(180, 35, 24); padding: 11px; border-radius: 9px; margin-bottom: 15px; font-size: 13px; display: none; }
+
+.demo-info { margin-top: 18px; background: rgb(247, 248, 248); padding: 12px; border-radius: 10px; font-size: 12px; color: rgb(102, 102, 102); line-height: 1.8; }
+
+.app { min-height: 100vh; }
+
+.topbar { height: 70px; background: rgb(18, 60, 53); color: rgb(255, 255, 255); display: flex; align-items: center; justify-content: space-between; padding: 0px 22px; position: sticky; top: 0px; z-index: 10; box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 12px; }
+
+.brand { display: flex; align-items: center; gap: 10px; }
+
+.brand-icon { width: 42px; height: 42px; background: rgb(212, 175, 55); color: rgb(18, 60, 53); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+
+.brand-title { font-size: 17px; font-weight: bold; }
+
+.user-area { display: flex; align-items: center; gap: 10px; }
+
+.user-role { font-size: 12px; opacity: 0.8; }
+
+.logout { border: 1px solid rgba(255, 255, 255, 0.35); background: transparent; color: white; padding: 8px 12px; border-radius: 8px; cursor: pointer; }
+
+.layout { display: flex; min-height: calc(-70px + 100vh); }
+
+.sidebar { width: 235px; background: rgb(255, 255, 255); border-left: 1px solid rgb(225, 231, 228); padding: 18px 12px; }
+
+.menu-btn { width: 100%; border: 0px; background: transparent; text-align: right; padding: 13px; border-radius: 9px; margin-bottom: 5px; cursor: pointer; color: rgb(77, 90, 86); }
+
+.menu-btn:hover, .menu-btn.active { background: rgb(232, 243, 240); color: rgb(18, 60, 53); font-weight: bold; }
+
+.content { flex: 1 1 0%; padding: 25px; max-width: 1400px; margin: auto; width: 100%; }
+
+.page-title { color: rgb(18, 60, 53); margin-bottom: 5px; font-size: 25px; }
+
+.page-description { color: rgb(119, 119, 119); margin-bottom: 22px; font-size: 14px; }
+
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 25px; }
+
+.stat-card { background: rgb(255, 255, 255); border-radius: 15px; padding: 20px; border: 1px solid rgb(226, 232, 229); }
+
+.stat-label { color: rgb(119, 119, 119); font-size: 13px; }
+
+.stat-number { color: rgb(18, 60, 53); font-size: 29px; font-weight: bold; margin-top: 8px; }
+
+.card { background: rgb(255, 255, 255); border-radius: 15px; padding: 20px; border: 1px solid rgb(226, 232, 229); margin-bottom: 18px; }
+
+.card h3 { color: rgb(18, 60, 53); margin-bottom: 15px; }
+
+.quick-actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+
+.action { border: 1px solid rgb(220, 229, 225); background: rgb(248, 250, 249); border-radius: 12px; padding: 17px; cursor: pointer; text-align: center; }
+
+.action:hover { background: rgb(232, 243, 240); }
+
+.action-icon { font-size: 25px; margin-bottom: 8px; }
+
+.search-box { width: 100%; padding: 13px; border: 1px solid rgb(216, 224, 220); border-radius: 10px; margin-bottom: 15px; }
+
+.table-wrap { overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; }
+
+th, td { padding: 13px 10px; text-align: right; border-bottom: 1px solid rgb(237, 240, 239); font-size: 13px; }
+
+th { background: rgb(244, 247, 246); color: rgb(52, 83, 75); }
+
+.status { display: inline-block; padding: 5px 9px; border-radius: 20px; font-size: 11px; }
+
+.status.open { background: rgb(230, 245, 237); color: rgb(20, 122, 69); }
+
+.status.closed { background: rgb(240, 240, 240); color: rgb(102, 102, 102); }
+
+.status.wait { background: rgb(255, 244, 216); color: rgb(150, 101, 0); }
+
+.qr-section { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+.qr-box { text-align: center; padding: 20px; background: rgb(250, 252, 252); border: 1px dashed rgb(184, 201, 195); border-radius: 15px; }
+
+#qrcode { margin: 15px auto; width: 220px; min-height: 220px; display: flex; align-items: center; justify-content: center; background: white; }
+
+.qr-placeholder { width: 200px; height: 200px; background: linear-gradient(90deg, rgb(17, 17, 17) 10px, transparent 10px) 0px 0px / 30px 30px, linear-gradient(rgb(17, 17, 17) 10px, transparent 10px) 0px 0px / 30px 30px, rgb(255, 255, 255); border: 10px solid rgb(255, 255, 255); box-shadow: rgb(221, 221, 221) 0px 0px 0px 1px; }
+
+.copy-btn { border: 0px; background: rgb(23, 100, 85); color: white; padding: 11px 16px; border-radius: 9px; cursor: pointer; }
+
+.detail { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+
+.detail-item { background: rgb(247, 249, 248); padding: 14px; border-radius: 10px; }
+
+.detail-item span { display: block; color: rgb(119, 119, 119); font-size: 12px; margin-bottom: 5px; }
+
+.detail-item strong { color: rgb(23, 63, 56); }
+
+.toast { position: fixed; bottom: 20px; left: 20px; background: rgb(18, 60, 53); color: rgb(255, 255, 255); padding: 13px 18px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 20px; display: none; z-index: 100; }
+
+@media (max-width: 850px) {
+  .sidebar { width: 75px; padding: 10px 6px; }
+  .menu-btn { text-align: center; font-size: 0px; }
+  .menu-btn::first-letter { font-size: 20px; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .quick-actions { grid-template-columns: 1fr; }
+  .qr-section { grid-template-columns: 1fr; }
+  .brand-title { font-size: 13px; }
+  .user-role { display: none; }
+}
+
+@media (max-width: 520px) {
+  .topbar { padding: 0px 10px; }
+  .content { padding: 15px; }
+  .stats { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .stat-card { padding: 14px 10px; }
+  .stat-number { font-size: 23px; }
+  .login-card { padding: 25px 18px; }
+  .detail { grid-template-columns: 1fr; }
+}
+------MultipartBoundary--MWpolNbo0xEcLIur7ZHL6haLj6344guZaRzoCzRi4A----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: cid:css-188b626e-d347-4162-9fe0-6b4c8dd8152b@mhtml.blink
+
+@charset "utf-8";
+
+﻿html[console-only], html[console-only] body { width: 100%; height: 100%; margin: 0px; overflow: hidden; background: var(--primary-color, #313131) !important; }
+
+c-console { --console-background: #313131; --console-background-text: #eee; --console-surface: #313131; --console-surface-text: #eee; --console-control: #414141; --console-control-text: #d6d3d3; --console-active: #555; --console-active-text: #fff; --console-border: rgba(204, 204, 204, 0.35); --console-muted: #aaa; --console-placeholder: #929292; --console-scrollbar: #666; --console-danger: #ff9b9b; --console-danger-fill: #a00000; --console-warning-fill: #ffb95c; --console-error-surface: #422; --console-warning-surface: #633; --console-link: #99f; --console-accent: rgb(120, 105, 225); --console-function: rgb(145, 136, 168); --console-success: rgb(59, 161, 59); box-sizing: border-box; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column; position: fixed; top: var(--console-viewport-top, 0); left: var(--console-viewport-left, 0); width: var(--console-viewport-width, 100vw); height: var(--console-viewport-height, 100dvh); min-height: 0px; overflow: hidden; z-index: 99998; background: var(--console-background); color: var(--console-background-text); font-family: var(--app-font-family, Verdana, Geneva, Tahoma, sans-serif); color-scheme: dark; }
+
+html[console-only] c-console { --console-background: var(--primary-color, #313131); --console-background-text: var(--primary-text-color, #eee); --console-surface: var(--secondary-color, var(--primary-color, #313131)); --console-surface-text: var( --secondary-text-color, var(--primary-text-color, #eee) ); --console-control: var( --popup-background-color, var(--secondary-color, #414141) ); --console-control-text: var( --popup-text-color, var(--secondary-text-color, #d6d3d3) ); --console-active: var(--active-color, #555); --console-active-text: var(--active-text-color, #fff); --console-border: var(--border-color, rgba(204, 204, 204, 0.35)); --console-muted: var(--secondary-text-color, #aaa); --console-placeholder: var(--secondary-text-color, #929292); --console-scrollbar: var(--scrollbar-color, #666); --console-danger: var(--error-text-color, #ff9b9b); --console-danger-fill: var(--danger-color, #a00000); --console-warning-fill: var(--error-text-color, #ffb95c); --console-link: var(--link-text-color, #99f); --console-accent: var(--active-color, rgb(120, 105, 225)); --console-function: var(--secondary-text-color, rgb(145, 136, 168)); --console-success: var(--success-text-color, rgb(59, 161, 59)); }
+
+html[theme-type="light"] c-console { color-scheme: light; }
+
+c-console[standalone] { position: absolute; inset: 0px; width: auto; height: auto; }
+
+.__c-action { min-height: 32px; padding: 5px 8px; border: 0px; border-radius: 3px; background: rgba(0, 0, 0, 0); color: var(--console-surface-text); font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; font-size: 0.76rem; touch-action: manipulation; }
+
+.__c-action:active { background: var(--console-active); color: var(--console-active-text); }
+
+.__c-action-danger { color: var(--console-danger); }
+
+.__c-context { box-sizing: border-box; max-width: 112px; min-height: 32px; padding: 4px 20px 4px 6px; border: 0px; border-radius: 3px; outline: none; background: var(--console-control); color: var(--console-control-text); font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; font-size: 0.7rem; }
+
+.__c-context:focus-visible { outline: 1px solid var(--console-active); outline-offset: -1px; }
+
+.__c-context:disabled { opacity: 0.55; }
+
+c-output { display: block; -webkit-box-flex: 1; flex: 1 1 100%; min-height: 0px; overflow: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: var(--console-scrollbar) rgba(0,0,0,0); }
+
+c-output > .variable-virtual-spacer, c-output > .variable-virtual-items { display: block; width: 100%; }
+
+c-input { box-sizing: border-box; display: flex; -webkit-box-align: end; align-items: flex-end; gap: 6px; width: 100%; min-height: 96px; padding: 7px 7px max(8px,env(safe-area-inset-bottom)); background: var(--console-surface); color: var(--console-surface-text); }
+
+c-input::before { content: ">>"; align-self: flex-start; padding-top: 9px; color: var(--console-accent); font: italic 13px / 1 "Courier New", Courier, monospace; }
+
+#__c-input { box-sizing: border-box; display: block; -webkit-box-flex: 1; flex: 1 1 auto; width: 100%; min-width: 0px; min-height: 82px; max-height: 120px; margin: 0px; padding: 7px 3px; border: 0px; outline: none; resize: none; overflow-y: auto; background: rgba(0, 0, 0, 0); color: var(--console-surface-text); font: 13px / 1.45 "Courier New", Courier, monospace; caret-color: currentcolor !important; }
+
+c-input-actions { display: flex; -webkit-box-flex: 0; flex: 0 0 auto; -webkit-box-align: center; align-items: center; gap: 2px; padding-bottom: 2px; }
+
+#__c-input::-webkit-input-placeholder { color: var(--console-placeholder); opacity: 0.75; }
+
+#__c-input::placeholder { color: var(--console-placeholder); opacity: 0.75; }
+
+#__c-input:disabled { opacity: 0.55; }
+
+c-message { box-sizing: border-box; display: flex; position: relative; flex-wrap: wrap; min-height: 45px; padding: 5px 7px 4px; border-bottom: 1px solid var(--console-border); background: var(--console-surface); color: var(--console-surface-text); font-size: 0.9rem; }
+
+c-message[log-level="error"] { background: color-mix(in srgb, var(--console-danger-fill) 16%, var(--console-surface)); }
+
+c-message[log-level="warn"] { background: color-mix(in srgb, var(--console-warning-fill) 20%, var(--console-surface)); }
+
+c-text, c-code { box-sizing: border-box; display: block; width: 100%; max-width: 100%; padding: 2px 4px; overflow-wrap: anywhere; white-space: pre-wrap; font: 0.9rem / 1.45 Verdana, Geneva, Tahoma, sans-serif; }
+
+c-code { position: relative; padding-right: 42px; overflow-x: auto; color: var(--console-surface-text); font-family: "Courier New", Courier, monospace; white-space: pre-wrap; cursor: pointer; }
+
+c-code::before { content: ">>"; padding-right: 5px; font-style: italic; }
+
+c-code::after { content: "use"; position: absolute; top: 1px; right: 1px; padding: 1px 6px; border-radius: 3px; background: var(--console-active); color: var(--console-active-text); font: .62rem/1.4 var(--app-font-family, sans-serif); }
+
+c-stack { box-sizing: border-box; display: flex; -webkit-box-flex: 1; flex: 1 0 100%; -webkit-box-pack: justify; justify-content: space-between; gap: 8px; min-width: 0px; margin-top: 3px; padding: 3px 4px 0px; color: var(--console-muted); opacity: 0.8; font-size: 0.7rem; }
+
+c-date, c-trace { min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+c-trace { direction: rtl; text-align: right; }
+
+c-object { color: var(--console-link); text-decoration: underline; }
+
+c-line { display: block; }
+
+c-key { margin-right: 5px; color: var(--console-accent); font-size: 0.9rem; }
+
+c-text.__c-boolean, c-text.__c-number, c-text.__c-symbol { color: var(--console-accent); }
+
+c-text.__c-function { color: var(--console-function); font-family: "Courier New", Courier, monospace; }
+
+c-text.__c-object, c-text.__c-undefined { color: var(--console-success); }
+
+c-text.__c-string { color: var(--console-success); }
+
+c-text.__c-string:not(.no-quotes)::before { content: "\""; margin-right: 2px; }
+
+c-text.__c-string:not(.no-quotes)::after { content: "\""; margin-left: 2px; }
+
+c-group { display: none; margin-left: 14px; }
+
+c-type[type="body-toggler"] { cursor: pointer; user-select: none; }
+
+c-type[type="body-toggler"].__show-data + c-group { display: block; }
+
+c-type[type="body-toggler"]::before { display: inline-block; content: "▸"; margin-right: 3px; }
+
+c-type[type="body-toggler"]::after { content: " {…}"; }
+
+c-type[type="body-toggler"].__show-data::before { content: "▾"; }
+
+c-type[type="body-toggler"].__show-data::after { display: none; }
+
+c-table { display: table; width: 100%; border-collapse: collapse; color: var(--console-surface-text); }
+
+c-table c-row { display: table-row; border-bottom: 1px solid var(--console-border); }
+
+c-table c-cell { display: table-cell; padding: 5px; }
+
+c-toggler { position: fixed; top: 0px; left: 0px; width: 30px; height: 30px; border-radius: 50%; z-index: 99999; opacity: 0.5; background-color: rgb(255, 255, 255); background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAE9JREFUOMtjYBh0gBHO+k+cSkYilcPVMpHqpIHRwIgUFERp+I8SekQ5CY8WXH7AqYWJyGglqIERV3QykaYcV7DiSSwsODw8yJIGdTPQIAQAg9gKJl7UINwAAAAASUVORK5CYII="); background-position: center center; background-repeat: no-repeat; background-size: 24px auto; box-shadow: rgba(0, 0, 0, 0.4) -2px 2px 8px; touch-action: none; }
+
+c-toggler:active { opacity: 0.8; }
+
+[hidden] { display: none !important; }
+
+@supports not (height: 100dvh) {
+  c-console { height: var(--console-viewport-height, 100vh); }
+}
+------MultipartBoundary--MWpolNbo0xEcLIur7ZHL6haLj6344guZaRzoCzRi4A------
